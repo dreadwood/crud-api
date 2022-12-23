@@ -1,0 +1,14 @@
+{
+  "name": "crud-api",
+  "description": "This repository implements the CRUD API task from https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments/crud-api/assignment.md",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "dreadwood",
+    "rsshool"
+  ],
+  "author": "dreadwood"
+}
