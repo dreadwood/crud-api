@@ -3,8 +3,8 @@
   "description": "This repository implements the CRUD API task from https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments/crud-api/assignment.md",
   "type": "module",
   "scripts": {
-    "start:dev": "nodemon src/index.ts",
-    "start:prod": "ts-node src/index.ts",
+    "start:dev": "nodemon -r dotenv/config src/index.ts",
+    "start:prod": "ts-node -r dotenv/config src/index.ts",
     "eslint": "eslint --ext .ts src/",
     "eslint:fix": "npm run eslint -- --fix"
   },
