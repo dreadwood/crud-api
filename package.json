@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "start:dev": "nodemon -r dotenv/config src/index.ts",
-    "start:prod": "ts-node -r dotenv/config src/index.ts",
+    "start:prod": "webpack && node -r dotenv/config dist/main.cjs",
     "eslint": "eslint --ext .ts src/",
     "eslint:fix": "npm run eslint -- --fix"
   },
@@ -21,8 +21,12 @@
     "eslint-config-xo": "0.43.1",
     "eslint-config-xo-typescript": "0.55.1",
     "nodemon": "2.0.20",
+    "ts-loader": "9.4.2",
     "ts-node": "10.9.1",
-    "typescript": "4.9.4"
+    "typescript": "4.9.4",
+    "webpack": "5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-node-externals": "3.0.0"
   },
   "dependencies": {
     "cross-env": "7.0.3",
