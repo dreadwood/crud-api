@@ -14,7 +14,7 @@ export const router = async (req: IncomingMessage, res: ServerResponse) => {
 	const urlPaths = url.split('/');
 
 	if (!checkRoute(urlPaths)) {
-		res.writeHead(StatusCode.BAD_REQUEST);
+		res.writeHead(StatusCode.BAD_REQUEST, {'Content-Type': 'application/json'});
 		res.end(JSON.stringify({
 			error: ErrorMessages.BAD_REQUEST,
 		}));
