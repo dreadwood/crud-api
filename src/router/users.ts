@@ -23,6 +23,7 @@ export const userHandler = async (req: IncomingMessage, res: ServerResponse) => 
 				res.end(JSON.stringify({
 					error: ErrorMessages.BAD_REQUEST,
 				}));
+				return;
 			}
 
 			const result = store.createUser(userData as InputUser);
@@ -30,6 +31,7 @@ export const userHandler = async (req: IncomingMessage, res: ServerResponse) => 
 			if (result) {
 				res.writeHead(StatusCode.CREATED, {'Content-Type': 'application/json'});
 				res.end(JSON.stringify(userData));
+				return;
 			}
 
 			res.writeHead(StatusCode.INTERNAL_SERVER_ERROR, {'Content-Type': 'application/json'});
