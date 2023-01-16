@@ -1,8 +1,8 @@
-// DEFAULT_PORT
 export const defaultPort = 8000;
-// API_PREFIX
 export const apiPrefix = 'api';
 export const usersPrefix = 'users';
+export const serverListenMessage = 'Server is running and listening on port';
+export const deleteMessage = 'The user has been deleted. UserId';
 
 export enum StatusCode {
 	OK = 200,
@@ -24,5 +24,6 @@ export enum ErrorMessages {
 	BAD_REQUEST = 'Request does not contain required fields',
 	BAD_REQUEST_ID = 'Request does not contain userId or it is not correct',
 	NOT_FOUND = 'Requests to non-existing endpoints',
+	NOT_FOUND_ID = 'User with this userId does not exist',
 	INTERNAL_SERVER_ERROR = 'Unable to process request correctly',
 }

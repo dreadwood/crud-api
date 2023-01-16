@@ -45,7 +45,7 @@ class Store {
 			hobbies: data.hobbies,
 		};
 
-		return true;
+		return this._users[index];
 	}
 
 	removeUser(userId: string) {
