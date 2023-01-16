@@ -2,7 +2,7 @@ import {type InputUser} from './types/input-user';
 import {type StoreUser} from './types/store-user';
 import {v4 as uuid} from 'uuid';
 
-export class Store {
+class Store {
 	public _users: StoreUser[];
 
 	constructor() {
@@ -59,3 +59,5 @@ export class Store {
 		return false;
 	}
 }
+
+export const store = new Store();

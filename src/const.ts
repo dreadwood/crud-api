@@ -22,6 +22,7 @@ export enum HttpMethods {
 
 export enum ErrorMessages {
 	BAD_REQUEST = 'Request does not contain required fields',
+	BAD_REQUEST_ID = 'Request does not contain userId or it is not correct',
 	NOT_FOUND = 'Requests to non-existing endpoints',
 	INTERNAL_SERVER_ERROR = 'Unable to process request correctly',
 }
