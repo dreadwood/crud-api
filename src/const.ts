@@ -1,4 +1,4 @@
-export const defaultPort = 8000;
+export const defaultPort = 4000;
 export const apiPrefix = 'api';
 export const usersPrefix = 'users';
 export const serverListenMessage = 'Server is running and listening on port';
